@@ -8,6 +8,7 @@ public class CountObservable implements Observable.OnSubscribe<Integer> {
     private int value;
 
     public CountObservable(int value) {
+        System.out.println("CountObservable object created ....  by thread: "+ Thread.currentThread().getId());
         this.value = value;
     }
 
